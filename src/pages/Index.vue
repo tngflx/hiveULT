@@ -26,6 +26,28 @@
         <div class="q-gutter-sm row items-center no-wrap">
           <q-btn round dense flat color="grey-8" icon="video_call" v-if="$q.screen.gt.sm">
             <q-tooltip>Create a video or post</q-tooltip>
+            <q-menu auto-close :offset="[110, 8]">
+              <q-list style="min-width: 150px">
+                <q-item clickable>
+                  <q-item-section>New group</q-item-section>
+                </q-item>
+                <q-item clickable>
+                  <q-item-section>Profile</q-item-section>
+                </q-item>
+                <q-item clickable>
+                  <q-item-section>Archived</q-item-section>
+                </q-item>
+                <q-item clickable>
+                  <q-item-section>Favorites</q-item-section>
+                </q-item>
+                <q-item clickable>
+                  <q-item-section>Settings</q-item-section>
+                </q-item>
+                <q-item clickable>
+                  <q-item-section>Logout</q-item-section>
+                </q-item>
+              </q-list>
+            </q-menu>
           </q-btn>
           <q-btn round dense flat color="grey-4" icon="apps" v-if="$q.screen.gt.sm">
             <q-tooltip>Apps</q-tooltip>
